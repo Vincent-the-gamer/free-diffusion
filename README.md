@@ -36,7 +36,7 @@ const uniqueId = await refreshUniqueId();
 ```ts
 import { freeDiffusion } from "free-diffusion";
 
-const image = await freeDiffusion({
+const recordUuid = await freeDiffusion({
   prompt: "A cute bikini girl with a stylish body is standing on the beach",
   negativePrompt: "no face, extra limbs, low quality",
   model: "tamarin",
@@ -47,6 +47,8 @@ const image = await freeDiffusion({
 ```
 
 ### Check Generation Status
+
+Image url will appear in status json data if picture generation is completed.
 
 ```ts
 import { checkStatus } from "free-diffusion";
