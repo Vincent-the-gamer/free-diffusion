@@ -43,7 +43,6 @@ const image = await freeDiffusion({
   size: "4:3",
   batchSize: 1,
   uniqueId: "<unique-id>",
-  recordUuid: "<record-uuid>",
 });
 ```
 
