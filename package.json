@@ -1,5 +1,5 @@
 {
-  "name": "free-diffusion",
+  "name": "@vince-gamer/free-diffusion",
   "version": "0.1.0",
   "type": "module",
   "description": "Reverse engineering API of stablediffusion3.net",
