@@ -18,7 +18,7 @@ Reverse engineering API of stablediffusion3.net
 ## Installation
 
 ```shell
-npm install @vince-gamer/free-diffusion
+npm install free-diffusion
 ```
 
 ## Usage
