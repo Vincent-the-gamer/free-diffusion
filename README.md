@@ -11,8 +11,8 @@ Reverse engineering API of stablediffusion3.net
 ## Examples
 
 <div style="display: flex; flex-direction: row; justify-content: center;">
-    <img src=".github/example1.png" style="width: 300px; height: 300px;">
-    <img src=".github/example2.png" style="width: 300px; height: 300px;">
+    <img src=".github/example1.png" style="width: 400px; height: 300px;">
+    <img src=".github/example2.png" style="width: 400px; height: 300px;">
 </div>
 
 ## Installation
@@ -90,6 +90,14 @@ Succeeded generating status:
   "upscaleFlag": 0,
   "failCode": ""
 }
+```
+
+## Test
+
+Using Vitest.
+
+```shell
+pnpm run test test/index.test.ts:<line_number>
 ```
 
 ## License
