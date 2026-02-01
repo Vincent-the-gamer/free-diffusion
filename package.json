@@ -1,0 +1,59 @@
+{
+  "name": "free-diffusion",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Reverse engineering API of stablediffusion3.net",
+  "author": "Vincent-the-gamer",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/index.d.mts"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsdown",
+    "test": "vitest",
+    "dep": "taze major -I"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Vincent-the-gamer/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vincent-the-gamer/pkg-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vincent-the-gamer/pkg-name/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com",
+    "access": "public"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "taze": "^19.9.2",
+    "tsdown": "^0.20.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "axios": "^1.13.4"
+  }
+}
